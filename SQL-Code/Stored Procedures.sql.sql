@@ -39,3 +39,56 @@ From #temp_employee3
 
 SELECT AvgAge * AvgSalary
 from #temp_employee3
+
+
+
+/*
+02/02/2022
+
+Today's Topic: Stored Procedure
+
+*/
+
+
+/*
+Highlight CREATE PROCEDURE TEST AS SELECT * FROM EmployeeDemographics to Execute
+*/
+
+CREATE PROCEDURE TEST
+AS
+SELECT * 
+FROM EmployeeDemographics
+
+/*
+Highlight EXEC TEST to Execute
+*/
+
+EXEC TEST
+
+
+/*
+Highlight the sql code below and then click on Eexcute
+*/
+
+CREATE PROCEDURE Temp_Employee
+AS
+Create table #temp_employee (
+JobTitle varchar(100),
+EmployeesPerJob int ,
+AvgAge int,
+AvgSalary int
+)
+
+
+Insert into #temp_employee
+SELECT JobTitle, Count(JobTitle), Avg(Age), AVG(salary)
+FROM mytestdb..EmployeeDemographics emp
+JOIN mytestdb..EmployeeSalary sal
+	ON emp.EmployeeID = sal.EmployeeID
+group by JobTitle
+Select * 
+From #temp_employee
+GO;
+
+
+EXEC Temp_Employee
