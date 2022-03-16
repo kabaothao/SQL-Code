@@ -67,7 +67,7 @@ EXEC TEST
 
 
 /*
-Highlight the sql code below and then click on Eexcute
+Highlight the sql code below and then click on Execute
 */
 
 CREATE PROCEDURE Temp_Employee
