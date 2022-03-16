@@ -14,6 +14,13 @@ JobTitle varchar(50),
 Salary int
 )
 
+Table 2 Query:
+Create Table EmployeeSalary
+(EmployeeID int,
+College varchar(50),
+Degree VARCHAR (50),
+Certification VARCHAR(50)
+)
 
 
 Table 1 Insert:
@@ -47,3 +54,24 @@ Insert Into EmployeeSalary VALUES
 (1015, 'Desktop Support', 67000),
 (1016, 'Virtual Assistant', 34000),
 (1017, 'Cashier', 45000)
+
+
+TABLE 3 insert:
+INSERT INTO EmployeeEducation VALUES
+(1001, 'University of Minnesota', 'BA', 'NA'),
+(1002, 'Saint Olaf College', 'BA', 'NA'),
+(1003, 'Saint Johns University', 'BA', 'NA'),
+(1004, 'Mankato State University', 'BA', 'NA'),
+(1005, 'University of Minnesota', 'BA', 'NA'),
+(1006, 'University of Minnesota', 'BA', 'NA'),
+(1007, 'University of Minnesota', 'BA', 'NA'),
+(1008, 'Metro State University', 'BS', 'NA'),
+(1009, 'Metro State University', 'BS', 'NA'),
+(1010, 'Metro State University', 'BA', 'NA'),
+(1011, 'Saint Olaf College', 'BS', 'CNA'),
+(1012, 'Saint Kates University', 'BS', 'CNA'),
+(1013, 'Augburgs University', 'BS', 'CNA'),
+(1014, 'Metro State University', 'BS', 'NA'),
+(1015, 'Augburgs University', 'BS', 'NA'),
+(1016, 'Century College', 'BS', 'NA'),
+(1017, 'Metro State University', 'BS', 'NA')
